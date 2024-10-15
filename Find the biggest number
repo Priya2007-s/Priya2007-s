@@ -1,32 +1,46 @@
-  void main()
+
+#include<stdio.h>
+int main()
 {
-    int a,b,c,d;
-    printf("enter the values of a b c d");
-    scanf("%d%d%d%d",&a,&b,&c,&d);
-    if(a>b)
-    {
-        if(a>c&&a>d)
-            printf("a is biggest");
-        else
-        {
-            if(c>d)
-                printf("cis biggest ");
-            else
-                printf("d is biggest");
-        }
-    }
-    else
-    {
-        if(b>c&&b>d)
-        {
-            printf("b is biggest");
-        }
-        else
-        {
-            if(c>d)
-                printf("c is biggest");
-            else
-                printf("d is biggest");
-        }
-    }
+int a,b,c,d;
+printf("enter values of a,b,c,d:");
+scanf("%d%d%d%d",&a,&b,&c,&d);
+if(a>b)
+{
+  if(a>c)
+{
+  if(a>d)
+  {
+  printf("big is %d",a);
+  }
+  else
+  {
+  printf("big is %d",d);
+  }
+}
+else
+{
+  if(c>d)
+  {
+  printf("big is %d",c);
+  }
+  else
+  {
+  printf("big is %d",d);
+  }
+}
+}
+else
+{
+if(b>d)
+  {
+  printf("big is %d",b);
+  }
+  else
+  {
+  printf("big is %d",d);
+  }
+
+}
+
 }
