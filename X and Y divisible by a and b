@@ -1,0 +1,19 @@
+
+#include<stdio.h>
+int main()
+{
+int X,Y,a,b,i;
+printf("enter X and Y values:");
+scanf("%d %d",&X,&Y);
+printf("enter values of a and b:");
+scanf("%d %d",&a,&b);
+printf("\nnumbers between %d %d divisible by %d,%d ",X,Y,a,b);
+for(i=X;i<=Y;i++)
+{
+if (i%a==0 && i%b==0)
+  {
+  printf("\ndivisible number is %d",i);
+  }
+}
+
+}
