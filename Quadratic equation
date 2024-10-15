@@ -1,0 +1,29 @@
+
+#include<math.h>
+int main()
+{
+int a,b,c,d;
+float r1,r2;
+printf("enter values of a ,b,c:");
+scanf("%d%d%d",&a,&b,&c);
+d = (b*b)-(4*a*c);
+r1 = (-b+sqrt(d))/2*a;
+r2 = (-b-sqrt(d))/2*a;
+if(d>0)
+{
+printf("roots are distinct and real");
+printf("\nroots are %f%f",r1,r2);
+}
+else if (d=0)
+{
+printf("roots are equal");
+printf("roots are %f%f",r1,r2);
+}
+else if (d<0)
+{
+printf("roots are imaginary");
+printf("roots are %f%f",r1,r2);
+}
+else
+printf("invalid");
+}
