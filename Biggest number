@@ -1,0 +1,47 @@
+
+5.Big no
+#include<stdio.h>
+int main()
+{
+int a,b,c,d;
+printf("enter values of a,b,c,d:");
+scanf("%d%d%d%d",&a,&b,&c,&d);
+if(a>b)
+{
+  if(a>c)
+{
+  if(a>d)
+  {
+  printf("big is %d",a);
+  }
+  else
+  {
+  printf("big is %d",d);
+  }
+}
+else
+{
+  if(c>d)
+  {
+  printf("big is %d",c);
+  }
+  else
+  {
+  printf("big is %d",d);
+  }
+}
+}
+else
+{
+if(b>d)
+  {
+  printf("big is %d",b);
+  }
+  else
+  {
+  printf("big is %d",d);
+  }
+
+}
+
+}
